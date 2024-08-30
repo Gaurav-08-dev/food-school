@@ -2,13 +2,21 @@ import LogoIcon from "@/assets/logo.svg";
 import MenuIcon from "@/assets/icon-menu.svg";
 export const Header = () => {
   return (
-    <header className="py-4 border-b border-white/15">
+    <header className="py-4 border-b border-white/15 md:border-none">
       <div className="container">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center border border-white/15 p-2.5 rounded-xl">
           <div>
             <div className="border border-white/15 h-10 w-10 rounded-lg inline-flex justify-center items-center">
               <LogoIcon className="h-8 w-8" />
             </div>
+          </div>
+          <div className="">
+            <nav className="flex gap-8 text-white/70">
+              <a href="#" className="hover:text-white transition">Home</a>
+              <a href="#" className="hover:text-white transition">Testimonials</a>
+              <a href="#" className="hover:text-white transition">Pricing</a>
+
+            </nav>
           </div>
           <div className="flex items-center gap-4">
             <button className="relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff]">
@@ -19,7 +27,7 @@ export const Header = () => {
               </div>
               <span>Start Today!</span>
             </button>
-            <MenuIcon />
+            <MenuIcon className="md:hidden" />
           </div>
         </div>
       </div>
