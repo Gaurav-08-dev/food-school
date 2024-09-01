@@ -10,7 +10,7 @@ export const Header = () => {
               <LogoIcon className="h-8 w-8" />
             </div>
           </div>
-          <div className="">
+          <div className="sm:hidden">
             <nav className="flex gap-8 text-white/70">
               <a href="#" className="hover:text-white transition">Home</a>
               <a href="#" className="hover:text-white transition">Testimonials</a>
