@@ -25,9 +25,7 @@ const config: Config = {
       lg: "1200px",
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
-      }
+     
     },
   },
   plugins: [],
