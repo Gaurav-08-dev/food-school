@@ -1,9 +1,10 @@
 import { Header } from "@/sections/Header";
+import { Hero } from "@/sections/Hero";
 export default function Home() {
   return (
-    <div className="flex flex-col h-full w-full">
+    <>
       <Header />
-      <div className="absolute left-[45%] top-[50%] ">Coming soon!</div>
-    </div>
+      <Hero/>
+    </>
   );
 }
