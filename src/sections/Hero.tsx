@@ -9,7 +9,7 @@ export const Hero = () => {
         backgroundImage: `url(${starsBg.src})`,
       }}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,35,.5)_78%,transparent)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,36,.5)_78%,transparent)]"></div>
 
       <PlanetWithStars />
       <div className="container relative mt-16">
