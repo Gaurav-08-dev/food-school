@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import acmeLogo from "@/assets/logo-acme.png";
 import apexLogo from "@/assets/logo-apex.png";
 import celestialLogo from "@/assets/logo-celestial.png";
@@ -7,7 +8,7 @@ import echoLogo from "@/assets/logo-echo.png";
 
 export const LogoTicker = () => {
   return (
-    <section className="py-20 md:py-24">
+    <section className="py-20 md:py-24">  
       <div className="container">
         <div className="flex items-center gap-5">
           <div className="flex-1 md:flex-none ">
@@ -26,7 +27,7 @@ export const LogoTicker = () => {
                 pulseLogo,
                 echoLogo,
               ].map((logo) => (
-                <img src={logo.src} key={logo.src} className="h-6 w-auto" />
+                <img alt={logo.src} src={logo.src} key={logo.src} className="h-6 w-auto" />
               ))}
             </div>
           </div>
